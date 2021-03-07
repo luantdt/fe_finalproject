@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Million_Dreams';
+    src: local('Million Dreams'),
+         local('Million-Dreams'),
+         url(./fonts/Million_Dreams.otf) format('opentype');
+    font-display: block;
+}
+
+*{
+    font-family: Million_Dreams;
+}
+
+ul {
+    list-style-type: none;
+}
+.font-color-white{
+    color:white;
+}
+.gradient-text-1 {
+    font-weight: 800;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text-2 {
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: monospace;
+}
+.font-header{
+    font-size: 40px;
+}
+.font-header-normal{
+    font-size: 30px;
+}
+.bolder{
+    font-weight: bolder;
+}
+.title-all-banner{
+    width: 500px;
+    border-bottom: 1px solid #000;
+    margin: 0px auto;
+    font-weight: bold;
+    text-align: center;
+}
+.space-top{
+    margin-top:150px;
+}
+.box-60{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:0 60px;
+}
+/* Header */
+.header{
+    background: #DAE2F8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    outline: none;
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    box-shadow:0px 5px 20px #000;
+    z-index:10;
+}
+.header .item-menu a{
+    font-size:35px;
+}
+
+/* Footer */
+.footer{
+    background-color: #4c4c4c;
+    padding: 70px 0 50px;
+}
+.footer .option-footer{
+    color:#cccccc;
+}
+.footer .option-footer:hover{
+    color:#f15e2c;
+}
