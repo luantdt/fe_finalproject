@@ -5,8 +5,10 @@ const Footer = () => {
         <div className="footer">
             <div className="container-footer">
                 <div className="row container-fluid">
-                
-                    <div class="col-sm-2 col-md-2 col-lg-2">
+
+                    <div class="col-sm-2 col-md-2 col-lg-2 find-store">
+                        
+                        <img src="./images/store.png" class="img-responsive" alt="Vereinfachen store" />
                         <button type="button" class="btn btn-success">TÌM CỬA HÀNG</button>
                     </div>
                     
@@ -26,7 +28,7 @@ const Footer = () => {
                                 <ul>
                                     <li className="font-header-normal mb-3 bolder font-color-white">VỀ CÔNG TY</li>
                                     <li className="option-footer">Tuyển dụng</li>
-                                    <li className="option-footer">Về Mister Store</li>
+                                    <li className="option-footer">Về Vereinfachen</li>
                                 </ul>
                             </div>
                             
@@ -51,19 +53,19 @@ const Footer = () => {
                             
                             <div class=" col-sm-4 col-md-4 col-lg-4">
                                 <ul>
-                                    <li className="font-header-normal mb-3 bolder font-color-white">MISTER SOCIAL</li>
+                                    <li className="font-header-normal mb-3 bolder font-color-white">Vereinfachen SOCIAL</li>
                                     <li className="option-footer"></li>
                                     <li className="option-footer"></li>
                                     <li className="option-footer"></li>
                                 </ul>
                             </div>
                             <div class=" col-sm-4 col-md-4 col-lg-4 copyright">
-                                Copyright © 2020 Mister Store. All rights reserved.
+                                Copyright © 2020 Vereinfachen. All rights reserved.
                             </div>
-                            <div class=" col-sm-4 col-md-4 col-lg-4">
+                            <div class=" col-sm-4 col-md-4 col-lg-4 footer-logo">
                                 
                                 <img src="../images/logo.png" class="img-responsive" alt="Image" />
-                                Mister Store
+                                Vereinfachen
                                 
                             </div>
                             

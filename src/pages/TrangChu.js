@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from '../module/header';
+import React, { useEffect } from 'react';
 import VideoIntro from '../module/VideoIntro';
 import ButtonContact from '../module/buttonContact'
 import MiniSlider from '../module/MiniBanner';
@@ -8,13 +7,11 @@ import HotProduct from '../module/HotProduct';
 import Collection from '../module/Catelogy';
 import NewItem from '../module/NewItem';
 import GetNotification from '../module/GetNotification';
-import Footer from '../module/Footer';
 
 const TrangChu = () => {
     return (
         <>
 
-            <Header />
             <VideoIntro />
             <ButtonContact />
             <MiniSlider />
@@ -27,8 +24,7 @@ const TrangChu = () => {
             <NewItem />
             </div>
             <GetNotification />
-            <Footer />
-            
+        
         </>
     );
 };

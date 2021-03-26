@@ -6,7 +6,7 @@ const index = () => {
 
     return (
         <div className = "buttons">
-            <Link to = '#'>
+            <Link herf='facebook.com'>
                 <div className = 'all_buton_contact button_facebook'>   
                     <i class="fa fa-facebook-square"></i>
                 </div>
@@ -18,7 +18,7 @@ const index = () => {
                 </div>
             </Link>
 
-            <Link to = "#">
+            <Link herf="twitter.com">
                 <div className = 'all_buton_contact button_twiter'>   
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </div>
