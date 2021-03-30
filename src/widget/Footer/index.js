@@ -59,7 +59,7 @@ const Footer = () => {
                                     <li className="option-footer"></li>
                                 </ul>
                             </div>
-                            <div class=" col-sm-4 col-md-4 col-lg-4 copyright">
+                            <div class=" col-sm-4 col-md-4 col-lg-4 copyright color-footer">
                                 Copyright © 2020 Vereinfachen. All rights reserved.
                             </div>
                             <div class=" col-sm-4 col-md-4 col-lg-4 footer-logo">

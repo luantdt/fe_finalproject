@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Catelogy = () => {
+const Categogry = () => {
     
     return (
         <div className="catelory space-top">
             <div className="title-all-banner">
-                Catelogy
+                Category
             </div>
 
             
@@ -19,7 +19,7 @@ const Catelogy = () => {
                             </div>
                             
                             <div className="title-item-catelory">
-                                Catelogry 1
+                                Category 1
                             </div>
                         </div>
                     </div>
@@ -55,4 +55,4 @@ const Catelogy = () => {
     );
 };
 
-export default Catelogy;
+export default Categogry;
