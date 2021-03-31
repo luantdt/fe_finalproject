@@ -22,8 +22,7 @@ const TrangSanPham = () => {
                                 <input type="text" class="form-control" id="" placeholder="Input field" />
                                 <label for="">Đến</label>
                                 <input type="text" class="form-control" id="" placeholder="Input field" />
-                            </div>
-                            
+                            </div>   
                         </div>
                         
                         <div className='select-prioritize'>
@@ -52,8 +51,6 @@ const TrangSanPham = () => {
                                 </label>
                             </div>
                         </div>
-
-                        
                         <button type="submit" class="btn btn-primary">Áp dụng</button>
                     </form>
                     
