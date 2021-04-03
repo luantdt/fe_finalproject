@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import TrangChonDoTuoi from './pages/TrangChonDoTuoi';
 import TrangChu from './pages/TrangChu';
@@ -11,7 +12,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+
 
 function App() {
   const [checkAge,setCheckAge] = useState(false);
