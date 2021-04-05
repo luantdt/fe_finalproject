@@ -69,6 +69,14 @@
 }
 .hot-product .list-hot-product .big-hot-product-item{
     margin:auto 0px;
+    text-align: center;
+}
+.hot-product .list-hot-product .big-hot-product-item .best-seller{
+    width: 150px;
+    height: auto;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
 }
 
 /* collection */

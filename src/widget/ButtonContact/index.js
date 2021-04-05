@@ -23,7 +23,7 @@ const index = () => {
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </div>
             </Link>
-            <div className="button-scroll-top animate__backInRight animate__backOutRight">
+            <div className="button-scroll-top">
                 <i class="bi bi-chevron-double-up" />
                 UP
             </div>

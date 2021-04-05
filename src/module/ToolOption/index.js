@@ -5,23 +5,23 @@ import {useState} from 'react';
 const ToolOption = () => {
     const [Default,SetDefault] = useState([
         {
-            'key':'0 đến 99k',
+            'key':'0 đến 499k',
             'var':'outlined'
         },
         {
-            'key':'100k đến 199k',
+            'key':'500k đến 999k',
             'var':'outlined'
         },
         {
-            'key':'200k đến 299k',
+            'key':'1000k đến 4999k',
             'var':'outlined'
         },
         {
-            'key':'300k đến 399k',
+            'key':'5000k đến 9999k',
             'var':'outlined'
         },
         {
-            'key':'400k đến 799k',
+            'key':'1000k đến 2000k',
             'var':'outlined'
         }
     ]);
@@ -54,17 +54,17 @@ const ToolOption = () => {
                         <label>
                             <input 
                                 type="radio" 
-                                name="gender" 
-                                id="input" 
-                                checked="checked" 
+                                name="gender"
+                                id="input"
+                                checked="checked"
                             />
                             Nam
                         </label>
                         <label>
                             <input 
-                                type="radio" 
-                                name="gender" 
-                                id="input" 
+                                type="radio"
+                                name="gender"
+                                id="input"
                             />
                             Nữ
                         </label>
@@ -77,11 +77,11 @@ const ToolOption = () => {
                         {
                             Default.map(item => {
                                 return <Chip 
-                                        color="primary" 
-                                        variant= {item.var} 
+                                        color="primary"
+                                        variant= {item.var}
                                         label={item.key}
                                         onClick={isDefault}
-                                    />  
+                                    />
                             })
                         }
                     </div>
