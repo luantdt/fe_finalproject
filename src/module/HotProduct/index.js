@@ -23,7 +23,7 @@ const HotProduct = () => {
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
-                                image="./images/product/product1.png"
+                                image="./images/hot-product/product1.png"
                                 title="images"
                                 />
                                 <CardContent>
@@ -47,7 +47,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -67,7 +67,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -86,7 +86,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -105,7 +105,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -128,7 +128,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -148,7 +148,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -167,7 +167,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>
@@ -186,7 +186,7 @@ const HotProduct = () => {
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"
-                                        image="./images/product/product1.png"
+                                        image="./images/hot-product/product1.png"
                                         title="images"
                                         />
                                         <CardContent>

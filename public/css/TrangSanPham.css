@@ -1,6 +1,10 @@
-.list-search{
-    margin:50px;
+.product-page{
+    padding: 100px 50px;
 }
+/* .product-page > div{
+    display: inline-flex;
+} */
+/* ToolOption */
 .list-search .option{
     border:1px solid #A9A9A9;
     margin-bottom: 30px;
@@ -23,4 +27,31 @@
 .list-search .option .title-option{
     font-weight: bolder;
     font-size: 20px;
+}
+
+/* item product */
+.list-product{
+    padding-left: 50px;
+}
+.item-product .img-product{
+    overflow: hidden;
+}
+.item-product .infor-produce{
+    margin-top: 15px;
+}
+.item-product .img-product img{
+    width: 340px;
+    height: 450px;
+    transition: 0.3s;
+}
+.item-product .img-product img:hover{
+    transform: scale(1.2);
+}
+.item-product {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.item-product .price-product{
+    font-size: 16px;
+    color: rgba(143,143,143,1);
 }

@@ -71,4 +71,5 @@ $(document).ready(function(){
     $('.button-scroll-top').click(function(){
         $('html,body').animate({scrollTop: 0},1200);
     });
+
 });

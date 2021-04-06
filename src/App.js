@@ -4,7 +4,6 @@ import TrangChonDoTuoi from './pages/TrangChonDoTuoi';
 import TrangChu from './pages/TrangChu';
 import Footer from './widget/Footer';
 import Header from './widget/Header';
-import ButtonContact from './widget/ButtonContact'
 import TrangSanPham from './pages/TrangSanPham';
 import {
   BrowserRouter as Router,
@@ -25,7 +24,6 @@ function App() {
   return (
     <>
       <Router>
-        <ButtonContact />
         {(checkAge)? '' : <Header />}
         {(checkAge)? <Redirect to="/choose-age"/>: ''}
         <Switch>

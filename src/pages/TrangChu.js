@@ -6,11 +6,12 @@ import HotProduct from '../module/HotProduct';
 import Collection from '../module/Category';
 import NewItem from '../module/NewItem';
 import GetNotification from '../module/GetNotification';
+import ButtonContact from '../module/ButtonContact';
 
 const TrangChu = () => {
     return (
         <>
-
+            <ButtonContact />
             <VideoIntro />
             <MiniSlider />
             <div className="container-fluid box-60">

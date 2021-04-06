@@ -13,15 +13,15 @@ const ToolOption = () => {
             'var':'outlined'
         },
         {
-            'key':'1000k đến 4999k',
+            'key':'1.000k đến 4.999k',
             'var':'outlined'
         },
         {
-            'key':'5000k đến 9999k',
+            'key':'5.000k đến 9.999k',
             'var':'outlined'
         },
         {
-            'key':'1000k đến 2000k',
+            'key':'10.000k đến 20.000k',
             'var':'outlined'
         }
     ]);
