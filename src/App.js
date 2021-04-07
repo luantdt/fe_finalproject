@@ -5,6 +5,7 @@ import TrangChu from './pages/TrangChu';
 import Footer from './widget/Footer';
 import Header from './widget/Header';
 import TrangSanPham from './pages/TrangSanPham';
+import TrangChiTietSanPham from './pages/TrangChiTietSanPham';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,7 +28,6 @@ function App() {
         {(checkAge)? '' : <Header />}
         {(checkAge)? <Redirect to="/choose-age"/>: ''}
         <Switch>
-
           <Route path="/choose-age"> 
             <TrangChonDoTuoi />
           </Route>
@@ -35,12 +35,12 @@ function App() {
           <Route path="/san-pham"> 
             <TrangSanPham />
           </Route>
-
+          <Route path='/:id_san_pham'>
+            <TrangChiTietSanPham />
+          </Route>
           <Route path='/'>
             <TrangChu />
           </Route>
-          
-
         </Switch>
         {(checkAge)? '' : <Footer />}
       </Router>

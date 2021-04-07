@@ -71,5 +71,6 @@ $(document).ready(function(){
     $('.button-scroll-top').click(function(){
         $('html,body').animate({scrollTop: 0},1200);
     });
-
+    //Trang Chi Tiết Sản Phẩm
+    $.lockfixed("#infor-product", {offset: {top: 20, bottom: 900} });
 });

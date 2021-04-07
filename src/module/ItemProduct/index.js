@@ -11,7 +11,7 @@ const Product = () => {
             <div className="row">
                 {
                     data[0].map(item => {
-                        return <Item producer={item.producer} image={item.avatar} name={item.name} price={item.gia}/>
+                        return <Item producer={item.producer} image={item.avatar} name={item.name} price={item.gia} ma={item.id}/>
                     })
                 }
             </div>

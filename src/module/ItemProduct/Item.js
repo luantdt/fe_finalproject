@@ -8,7 +8,7 @@ const ItemProduct = (props) => {
         <>
             <div className="col-sm-3">
                 <div className="item-product">
-                    <Link to="#">
+                    <Link to={'/'+props.ma}>
                         <div className="img-product">
                             <img src={"./images/product/" + props.image} class="img-responsive img-product" alt="Image" />
                         </div>
@@ -24,8 +24,12 @@ const ItemProduct = (props) => {
                                 {parseInt(props.price).toLocaleString() + '.000 đ'}
                             </div>
                         </div>
-                        
                     </Link>
+                    <div className="button-control-product">
+                        <button type="button" class="btn-circle"><i class="bi bi-bag-plus-fill" /></button>
+                        <button type="button" class="btn-circle"><i class="bi bi-heart" /></button>
+                        <button type="button" class="btn-circle"><i class="bi bi-info" /></button>
+                    </div>
                 </div>
             </div>
         </>
