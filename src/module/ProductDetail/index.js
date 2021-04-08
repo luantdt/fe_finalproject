@@ -5,8 +5,15 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {Link} from '@material-ui/core';
+/* import $ from 'jquery';
+import { useEffect } from 'react'; */
 
-const index = () => {
+const ProductDetail = () => {
+
+    /* useEffect(() => {
+        $.lockfixed("#infor-product", {offset: {top: 20, bottom: 900} });
+    },[]) */
+
     return (
         <div className="infor-product" id="infor-product">
             <div className="name-producer">
@@ -14,6 +21,9 @@ const index = () => {
             </div>
             <div className="name-product">
                 Seventh Collection Socks
+            </div>
+            <div className="price-product">
+                2.000.000 đ
             </div>
             <div className="size-and-color">
                 <div className="color">
@@ -70,4 +80,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default ProductDetail;

@@ -135,7 +135,6 @@ ul {
 /* button */
 .buttons .button-scroll-top{
     position: fixed;
-    right: 0;
     bottom: 100px;
     cursor: pointer;
     z-index:2;
@@ -143,6 +142,7 @@ ul {
     flex-direction: column;
     font-size: 30px;
     align-content: center; 
+    right:-100px;
     
 }
 .buttons .all_buton_contact{

@@ -3,6 +3,7 @@ import ToolOption from '../module/ToolOption';
 import ItemProduct from '../module/ItemProduct';
 
 const TrangSanPham = () => {
+
     return (
         <>
             <div className="container-fluid product-page">

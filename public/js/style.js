@@ -1,5 +1,8 @@
 
 $(document).ready(function(){
+    //scroll Top to Header 
+    
+    
     // hover tool search
     
     $("#action-search").hover(function(){
@@ -54,23 +57,6 @@ $(document).ready(function(){
             $(".all-item-hidden").css("display","none");
         });
     });
-
-    //scroll Top to Header 
-    $(window).scroll(function(event) {
-        
-        var pos_body = $('html,body').scrollTop();
-        //console.log(pos_body);
-        if(pos_body > 200){
-            $(".button-scroll-top").css("animation","move-in 0.3s");
-            $(".button-scroll-top").css("animation-fill-mode","both");
-        }else{
-            $(".button-scroll-top").css("animation","move-out 0.3s");
-            $(".button-scroll-top").css("animation-fill-mode","both");
-        }
-    });
-    $('.button-scroll-top').click(function(){
-        $('html,body').animate({scrollTop: 0},1200);
-    });
-    //Trang Chi Tiết Sản Phẩm
+    
     $.lockfixed("#infor-product", {offset: {top: 20, bottom: 900} });
 });
