@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 
-const ListImageProduct = () => {
+const ListImageProduct = (props) => {
     const [Zoom, setZoom] = useState(false);
     const [Image,setImage] = useState('');
 
@@ -26,13 +26,32 @@ const ListImageProduct = () => {
             $(".zoom-img").css("display","none");
         }
     }
+    const checkDetail = () => {
+        if(props.detail != 1){
+            return true
+        } else {
+            return false
+        }
+    }
+
+    const checkSize = () => {
+        if(props.size != 1){
+            return true
+        } else {
+            return false
+        }
+    }
     return (
         <>
             <div className="list-img">
-    
-                <img src="./images/product/A8_SOCKS_GREY_0182.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                {
+                    props.images.split(',').map(item => {
+                        return <img src={"./images/product/" + item} class="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                    })
+                }
+                {/* <img src="./images/product/A8_SOCKS_GREY_0182.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/>
                 <img src="./images/product/A8_SOCKS_GREY_0182_2UP.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/>
-                <img src="./images/product/A8_SOCKS_GREY_0183.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                <img src="./images/product/A8_SOCKS_GREY_0183.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/> */}
   
             </div>
             <div className="zoom-img">
@@ -43,24 +62,24 @@ const ListImageProduct = () => {
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="name-producer">
-                                    FEAR OF GOD
+                                    {props.producer}
                                 </div>
                                 <div className="name-product">
-                                    Seventh Collection Socks
+                                    {props.name}
                                 </div>
                                 <div className="price-product">
-                                    2.000.000 đ
+                                    {parseInt(props.price).toLocaleString() + '.000 đ'}
                                 </div>
                             </div>
                             <div className="col-sm-3">
                                 <div className="size-and-color">
                                     <div className="color">
                                         MORE COLOR
-                                        <input type="button" name="" id="input" class="" value="Light Grey" required="required" title="" />
+                                        <input type="button" name="" id="input" class="upper-case" value={props.color} required="required" title="" />
                                     </div>
                                     <div className="size">
                                         MORE SIZE
-                                        <input type="button" name="" id="input" class="" value="O/S" required="required" title="" />
+                                        <input type="button" name="" id="input" class="upper-case" value={checkSize()? props.size : 'o/s'} required="required" title="" />
                                     </div>
                                 </div>
                             </div>
