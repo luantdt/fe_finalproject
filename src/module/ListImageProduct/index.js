@@ -6,13 +6,14 @@ const ListImageProduct = (props) => {
     const [Image,setImage] = useState('');
 
     const handleImages = (src) => {
-        console.log(typeof(src));
-         if(typeof(src) != 'undefined' && src != ''){
+        //console.log(typeof(src));
+        if(typeof(src) != 'undefined' && src != ''){
             var temp = src.split('/');
             temp = temp[temp.length - 1]
             //console.log(temp)
             setImage(temp);
         }
+        console.log(Image)
     }
     const handleZoomImage = (e) => {
         //console.log(e.target.src);
@@ -26,13 +27,13 @@ const ListImageProduct = (props) => {
             $(".zoom-img").css("display","none");
         }
     }
-    const checkDetail = () => {
+    /* const checkDetail = () => {
         if(props.detail != 1){
             return true
         } else {
             return false
         }
-    }
+    } */
 
     const checkSize = () => {
         if(props.size != 1){
@@ -46,17 +47,18 @@ const ListImageProduct = (props) => {
             <div className="list-img">
                 {
                     props.images.split(',').map(item => {
-                        return <img src={"./images/product/" + item} class="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                        console.log(item)
+                        return <img src={"./images/product/" + item} className="img-responsive" alt="Image" onClick={handleZoomImage}/>
                     })
                 }
-                {/* <img src="./images/product/A8_SOCKS_GREY_0182.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/>
-                <img src="./images/product/A8_SOCKS_GREY_0182_2UP.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/>
-                <img src="./images/product/A8_SOCKS_GREY_0183.png" class="img-responsive" alt="Image" onClick={handleZoomImage}/> */}
+                {/* <img src="./images/product/A8_SOCKS_GREY_0182.png" className="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                <img src="./images/product/A8_SOCKS_GREY_0182_2UP.png" className="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                <img src="./images/product/A8_SOCKS_GREY_0183.png" className="img-responsive" alt="Image" onClick={handleZoomImage}/> */}
   
             </div>
             <div className="zoom-img">
-                <img src={"./images/product/" + Image} class="img-responsive" alt="Image" onClick={handleZoomImage}/>
-                <button type="button" onClick={handleZoomImage}><i class="bi bi-x" /></button>
+                <img src={"./images/product/" + Image} className="img-responsive" alt="Image" onClick={handleZoomImage}/>
+                <button type="button" onClick={handleZoomImage}><i className="bi bi-x" /></button>
                 <div className="buy-product">
                     <div className="container-fluid">
                         <div className="row">
@@ -75,11 +77,11 @@ const ListImageProduct = (props) => {
                                 <div className="size-and-color">
                                     <div className="color">
                                         MORE COLOR
-                                        <input type="button" name="" id="input" class="upper-case" value={props.color} required="required" title="" />
+                                        <input type="button" name="" id="input" className="upper-case" value={props.color} required="required" title="" />
                                     </div>
                                     <div className="size">
                                         MORE SIZE
-                                        <input type="button" name="" id="input" class="upper-case" value={checkSize()? props.size : 'o/s'} required="required" title="" />
+                                        <input type="button" name="" id="input" className="upper-case" value={checkSize()? props.size : 'o/s'} required="required" title="" />
                                     </div>
                                 </div>
                             </div>

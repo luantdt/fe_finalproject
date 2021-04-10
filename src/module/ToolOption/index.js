@@ -50,7 +50,7 @@ const ToolOption = () => {
                 <div className='select-gender option'>
                     <div className="title-option">Giới tính</div>
                     
-                    <div class="radio">
+                    <div className="radio">
                         <label>
                             <input 
                                 type="radio" 
@@ -96,7 +96,7 @@ const ToolOption = () => {
                 <div className='select-prioritize option'>
                     <div className="title-option">Ưu tiên</div>
                     
-                    <div class="radio">
+                    <div className="radio">
                         <label>
                             <input type="radio" name="prioritize" id="input" value="" />
                             Giá giảm dần
@@ -119,7 +119,7 @@ const ToolOption = () => {
                         </label>
                     </div>
                 </div>
-                <button class="btn btn-primary">Áp dụng</button>
+                <button className="btn btn-primary">Áp dụng</button>
             </div>
         </>
     );

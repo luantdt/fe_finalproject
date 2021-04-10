@@ -3,7 +3,7 @@
     to{top:60%;opacity: 1;}
 }
 .product-page{
-    padding: 100px 50px;
+    padding: 50px;
 }
 /* ToolOption */
 .list-search .option{
@@ -40,7 +40,7 @@
 .item-product .infor-produce{
     margin-top: 15px;
 }
-.item-product .img-product img{
+.item-product .img-product img , .images-buy-now img{
     width: 340px;
     height: 450px;
     transition: 0.3s;
@@ -67,4 +67,60 @@
     display: block;
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Buy now hidden */
+.box-blur{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(212, 211, 211);
+    z-index: 10;
+    display: none;
+    opacity: 0.6;
+}
+.buy-now-hidden-box {
+    width:50%;
+    position: fixed;
+    top:30%;
+    border: 5px double black;
+    background-color: white;
+    z-index: 0;
+    right:25%;
+    padding: 10px;
+    display: none;
+    z-index: 11;
+}
+.buy-now-hidden-box .images-buy-now img{
+    width: 100%;
+}
+.control-quality input {
+    width: 30%;
+    border-radius: 0;
+    color: black;
+    text-align: center;
+}
+.control-quality{
+    display: flex;
+}
+.control-quality button{
+    width: 50px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+}
+.buy-now-hidden-box .title{
+    font-weight: bolder;
+    margin: 5px 0 10px 0;
+    text-align: center;
+}
+.buy-now-hidden-box .out-buy-now button{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

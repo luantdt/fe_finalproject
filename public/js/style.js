@@ -81,9 +81,6 @@ $(document).ready(function(){
             $(".button-scroll-top").css("animation-fill-mode","both");
         }
     });
-    $('.button-scroll-top').click(function(){
-        $('html,body').animate({scrollTop: 0},1200);
-    });
 
 
     function sticky_scroll() {
@@ -127,5 +124,19 @@ $(document).ready(function(){
 
         sticky_scroll()
 
+    })
+
+    // buy now hidden
+    $('.btn-buy-now').click(function() {
+        $('.buy-now-hidden-box').css('display','block');
+        $('.box-blur').css('display','block');
+    })
+    $('.box-blur').click(function() {
+        $('.buy-now-hidden-box').css('display','none');
+        $('.box-blur').css('display','none');
+    })
+    $('.btn-close-buy-now').click(function() {
+        $('.buy-now-hidden-box').css('display','none');
+        $('.box-blur').css('display','none');
     })
 });

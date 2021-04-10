@@ -10,7 +10,7 @@ const ItemProduct = (props) => {
                 <div className="item-product">
                     <Link to={'/'+props.ma}>
                         <div className="img-product">
-                            <img src={"./images/product/" + props.image} class="img-responsive img-product" alt="Image" />
+                            <img src={"./images/product/" + props.image} className="img-responsive img-product" alt="Image" />
                         </div>
 
                         <div className="infor-produce">
@@ -26,9 +26,9 @@ const ItemProduct = (props) => {
                         </div>
                     </Link>
                     <div className="button-control-product">
-                        <button type="button" class="btn-circle"><i class="bi bi-bag-plus-fill" /></button>
-                        <button type="button" class="btn-circle"><i class="bi bi-heart" /></button>
-                        <button type="button" class="btn-circle"><i class="bi bi-info" /></button>
+                        <button type="button" className="btn-circle btn-buy-now" onClick={() => {props.handleChangeBuyNow(props.ma)}}><i className="bi bi-bag-plus-fill" /></button>
+                        <button type="button" className="btn-circle"><i className="bi bi-heart" /></button>
+                        <Link className="btn-circle" to={'/' + props.ma}><i className="bi bi-info" /></Link>
                     </div>
                 </div>
             </div>
