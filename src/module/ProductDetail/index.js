@@ -53,13 +53,10 @@ const ProductDetail = (props) => {
         }
     };
     const handleClickAdd = () => {
-        if(typeof addCart != 'undefined' && addCart != null){
-            var mang_gio_hang_temp = JSON.parse(addCart);
-        } else {
-            var mang_gio_hang_temp = []
-        }
+        var mang_gio_hang_temp = addCart
         console.log(mang_gio_hang_temp);
         if(mang_gio_hang_temp.length > 0){
+            mang_gio_hang_temp = JSON.parse(addCart)
             var flag_co_trong_gio_hang_hay_khong = false;
             for(var i = 0; i< mang_gio_hang_temp.length; i++){
                 if(mang_gio_hang_temp[i].id == productDetail.id){

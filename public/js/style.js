@@ -86,7 +86,6 @@ $(document).ready(function(){
         }
     });
 
-
     function sticky_scroll() {
 
         var a = $('#infor-product').outerWidth(), // Tính độ rộng của widget cần cố định

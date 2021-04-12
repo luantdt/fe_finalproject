@@ -3,13 +3,20 @@ import {
     Link,
 } from 'react-router-dom';
 import Data from './Data';
+import Badge from '@material-ui/core/Badge';
 
 const Header = () => {
     const [getPerson,setPerson] = useState();
     const [allItem] = useState(Data);
     const [contentChild, setContentChild] = useState();
+    const [totalItemCart,setTotalItemCard] = useState(0);
 
     useEffect(() => {
+        const CartTemp = localStorage.getItem('cart');
+        if(typeof CartTemp != 'undefined' && CartTemp != null){
+            var temp = JSON.parse(CartTemp);
+            setTotalItemCard(temp.length);
+        }
         const age = localStorage.getItem('person');
         if (age == 'adults'){
             setPerson('children')
@@ -17,7 +24,7 @@ const Header = () => {
             setPerson('adults')
         }
         //console.log(allItem);
-    },[getPerson])
+    },[getPerson,totalItemCart])
 
     const showChild = (e) => {
         const temp = e.target.className;
@@ -34,6 +41,10 @@ const Header = () => {
             //console.log(contentChild)
         }
     }
+    const defaultProps = {
+        color: 'secondary',
+        children: <i className="bi bi-bag" />,
+    };
     return (
         <>  
             
@@ -135,7 +146,7 @@ const Header = () => {
                         </div>
                         <div className="action-buy">
                             <Link to="gio-hang">
-                                <i className="bi bi-bag" />
+                                <Badge badgeContent={(totalItemCart != 0)? totalItemCart : 0 } {...defaultProps} />
                             </Link>
                         </div>
                         <div className="action-acc">

@@ -49,3 +49,21 @@
 .form-cart .box-total .list-btn-buy .btn-buy:hover{
     color:white;
 }
+.no-item{
+    margin-bottom: 100px;
+    text-align: center; 
+}
+.no-item img {
+    width: 50%;
+}
+.no-item .content-no-item{
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px 0 40px 0;
+}
+.no-item  a {
+    border: 3px solid black;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px 40px;
+}
