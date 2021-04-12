@@ -56,7 +56,7 @@ const Header = () => {
                 
                     <div className="col-sm-8 list-item-menu">
                         <ul className="navbar-nav mr-auto ">
-                            <div className="col-sm-2 item-menu item-home active">
+                            <div className="col-sm-3 item-menu item-home">
                                 <li className="nav-item">
                                     <Link 
                                         className="nav-link" 
@@ -83,7 +83,7 @@ const Header = () => {
                                 
                             </div>
                             
-                            <div className="col-sm-2 item-menu item-sales">
+                            <div className="col-sm-3 item-menu item-sales">
                                 <li className="nav-item">
                                     <Link 
                                         className="nav-link" 
@@ -102,16 +102,6 @@ const Header = () => {
                                     >
                                         CONTACT US 
                                         <span className="sr-only">(current)</span>
-                                    </Link>
-                                </li>
-                            </div>
-                            <div className="col-sm-2 change-adult">
-                                <li className="nav-item upper-case">
-                                    <Link to={getPerson}
-                                        className="nav-link"
-                                        href="#"
-                                    >
-                                        {getPerson}
                                     </Link>
                                 </li>
                             </div>
