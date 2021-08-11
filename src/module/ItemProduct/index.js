@@ -5,9 +5,12 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
 
 const Product = (props) => {
-    const [page, setPage] = React.useState(1);
-
+    const [page, setPage] = useState(1);
+    
     const data = useState(Data);
+    useEffect(() => {
+        console.log(props.DataProduct)
+    },[])
     const handleChangeBuyNow2 = (id) => {
         props.handleChangeBuyNow(id)
     }
@@ -29,7 +32,15 @@ const Product = (props) => {
             <div className="row">
                 {
                     data[0].map(item => {
-                        return <Item producer={item.producer} stock={item.stock} image={item.avatar} name={item.name} price={item.gia} ma={item.id} handleChangeBuyNow={handleChangeBuyNow2} />
+                        return < Item 
+                                    producer={item.producer} 
+                                    stock={item.stock} 
+                                    image={item.avatar} 
+                                    name={item.name} 
+                                    price={item.gia} 
+                                    ma={item.id} 
+                                    handleChangeBuyNow={handleChangeBuyNow2}
+                                />
                     })
                 }
             </div>

@@ -1,0 +1,18 @@
+.form-payment , .form-review {
+    margin: 100px 0;
+    padding: 0 50px;
+}
+.form-payment .title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 15px 0;
+}
+.form-payment .btn-payment {
+    text-align: center;
+    width: 100%;
+    margin: 9px;
+}
+.form-payment .btn-payment button{
+    width: 100%;
+} 

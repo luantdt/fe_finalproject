@@ -14,7 +14,7 @@ const TrangGioHang = () => {
         <> 
             <Alias alias={[{'name':'Trang Chủ','link':'/'},{'name':'Giỏ Hàng','link':'/gio-hang'}]}/> 
             {
-                (typeof cartInLocal != 'undefined' && cartInLocal != null)? 
+                (typeof cartInLocal != 'undefined' && cartInLocal != null && cartInLocal != '[]')? 
                     <FormCart />
                     :
                     <NoItem />

@@ -37,12 +37,6 @@ ul {
     background-color: hsl(0, 0%, 73%);
     border: 1px solid #5d5d5d;
 }
-.btn-buy{
-    color: white;
-    background-color: black;
-    border: #000;
-    padding: 10px;
-}
 .btn-continue{
     color: black;
     background-color: white;
@@ -52,11 +46,6 @@ ul {
 .stocking{
     background-color: black;
     color:white;
-    border: 1px solid black;
-}
-.btn-continue {
-    background-color: white;
-    color:black;
     border: 1px solid black;
 }
 .btn-circle{
@@ -148,4 +137,11 @@ ul {
 }
 .alias-page a:hover{
     text-decoration: none;
+}
+.btn-login{
+    color: white;
+    background-color: black;
+    border: 1px solid#000;
+    margin-top: 50px;
+    width: 300px;
 }

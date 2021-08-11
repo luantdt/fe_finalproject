@@ -4,19 +4,21 @@ import {Link} from 'react-router-dom'
 
 const FormCart = () => {
     const [cart,setCart] = useState();
-    const [total,setTotal] = useState();
+    const [total,setTotal] = useState(0);
+
     useEffect(() => {
         const CartTemp = localStorage.getItem('cart');
         if(typeof CartTemp != 'undefined' && CartTemp != null){
             var temp = JSON.parse(CartTemp);
             setCart(temp);
         }
-        setTimeout(() => {
-            getTotalPrice();
-        },100)
-    },[total]);
+
+    },[]);
+    useEffect(() => {
+        getTotalPrice()
+    },[cart]);
     const handleChangeAmount = (id_san_pham, gia_tri) => {
-        var temp_array = cart;
+        var temp_array = [...cart];
 
         for(var i = 0; i < temp_array.length; i++){
             if(id_san_pham == temp_array[i].id){
@@ -28,7 +30,7 @@ const FormCart = () => {
         }
     }
     const handleRemoveItemCart = (id_san_pham) => {
-        var temp_array = cart;
+        var temp_array = [...cart];
         for(var i = 0; i < temp_array.length; i++){
            
             if(id_san_pham == temp_array[i].id){

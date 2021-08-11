@@ -7,10 +7,11 @@ import TrangChiTietSanPham from './pages/TrangChiTietSanPham';
 import Trang404 from './pages/Trang404';
 import TrangGioHang from './pages/TrangGioHang';
 import TrangThanhToan from './pages/TrangThanhToan';
+import TrangDangNhap from './pages/TrangDangNhap';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
+  Switch
 } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/san-pham"> 
             <TrangSanPham />
+          </Route>
+          <Route path="/tai-khoan"> 
+            <TrangDangNhap />
           </Route>
           <Route path="/thanh-toan"> 
             <TrangThanhToan />

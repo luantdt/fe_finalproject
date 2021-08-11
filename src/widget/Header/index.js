@@ -10,21 +10,11 @@ const Header = () => {
     const [allItem] = useState(Data);
     const [contentChild, setContentChild] = useState();
     const [totalItemCart,setTotalItemCard] = useState(0);
+    const [cart,setCart] = useState([]);
 
     useEffect(() => {
-        const CartTemp = localStorage.getItem('cart');
-        if(typeof CartTemp != 'undefined' && CartTemp != null){
-            var temp = JSON.parse(CartTemp);
-            setTotalItemCard(temp.length);
-        }
-        const age = localStorage.getItem('person');
-        if (age == 'adults'){
-            setPerson('children')
-        } else {
-            setPerson('adults')
-        }
-        //console.log(allItem);
-    },[getPerson,totalItemCart])
+        handleChangeNumber();
+    },[localStorage.getItem('cart')])
 
     const showChild = (e) => {
         const temp = e.target.className;
@@ -45,6 +35,15 @@ const Header = () => {
         color: 'secondary',
         children: <i className="bi bi-bag" />,
     };
+    const handleChangeNumber = () => {
+        const CartTemp = localStorage.getItem('cart');
+        if(typeof CartTemp != 'undefined' && CartTemp != null){
+            var temp = JSON.parse(CartTemp);
+            return temp.length
+        } else {
+            return 0
+        }
+    }
     return (
         <>  
             
@@ -146,7 +145,7 @@ const Header = () => {
                         </div>
                         <div className="action-buy">
                             <Link to="gio-hang">
-                                <Badge badgeContent={(totalItemCart != 0)? totalItemCart : 0 } {...defaultProps} />
+                                <Badge badgeContent={handleChangeNumber()} {...defaultProps} />
                             </Link>
                         </div>
                         <div className="action-acc">

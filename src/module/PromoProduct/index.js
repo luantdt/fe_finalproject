@@ -16,7 +16,7 @@ const PromoProduct = () => {
                 <div className="col-sm-4">
                     <div className="banner-promo-item">
                         <Link to="/">
-                            <img src="./images/promo/promo1.png" className="img-responsive" alt="Image" />
+                            <img src="./images/promo/sale-50.jpg" className="img-responsive" alt="Image" />
                         </Link>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const PromoProduct = () => {
                 <div className="col-sm-4">
                     <div className="banner-promo-item">
                         <Link to="/">
-                            <img src="./images/promo/promo2.png" className="img-responsive" alt="Image" />
+                            <img src="./images/promo/sale-balo.jpg" className="img-responsive" alt="Image" />
                         </Link>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const PromoProduct = () => {
                 <div className="col-sm-4">
                     <div className="banner-promo-item">
                         <Link to="/">
-                            <img src="./images/promo/promo3.png" className="img-responsive" alt="Image" />
+                            <img src="./images/promo/big-sale.jpg" className="img-responsive" alt="Image" />
                         </Link>
                     </div>
                 </div>
